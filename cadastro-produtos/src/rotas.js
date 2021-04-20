@@ -6,14 +6,12 @@ import ConsultaProduto from './Views/produtos/consulta';
 
 function Rotas () {
     return (
-        <HashRouter>
-            <Switch>
-                <Route exact path="/consulta" component={ConsultaProduto} />
-                <Route exact path="/cadastro" component={CadastroProduto} />
-                <Route exact path="/home" component={Home} />
-                <Route exact path="/" component={Home} />
-            </Switch>
-        </HashRouter>
+        <Switch>
+            <Route exact path="/consulta" component={ConsultaProduto} />
+            <Route exact path="/cadastro" component={CadastroProduto} />
+            <Route exact path="/home" component={Home} />
+            <Route exact path="/" component={Home} />
+        </Switch>
     )
 }
 
